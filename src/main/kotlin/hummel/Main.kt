@@ -4,7 +4,7 @@ import java.io.File
 
 fun main(args: Array<String>) {
 	if (args.size < 2) {
-		println("Usage: java -jar LangGOT.jar de_DE.lang en_US.lang")
+		println("Usage: java -jar ThisApp.jar langUnfinalized.lang langFinalized.lang")
 		return
 	}
 
