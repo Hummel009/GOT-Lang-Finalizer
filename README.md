@@ -16,4 +16,4 @@
 
 ## Использование
 
-Запустить скомпилированные jar-файлы двойным нажатием ЛКМ, либо открыть консоль Windows в папке с jar-файлом и выполнить команду `java -jar GOT-Lang-Finalizer.jar langUnfinalized.lang langFinalized.lang`.
+Запустить скомпилированные jar-файлы двойным нажатием ЛКМ, либо открыть консоль Windows в папке с jar-файлом и выполнить команду `java -jar JarFileName.jar LangUnfinalized.lang LangFinalized.lang`.
