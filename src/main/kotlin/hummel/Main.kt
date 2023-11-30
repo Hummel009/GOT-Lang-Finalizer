@@ -3,9 +3,8 @@ package hummel
 import java.io.File
 
 fun main(args: Array<String>) {
-	if (args.size < 2) {
+	require(args.size >= 2) {
 		println("Usage: java -jar ThisApp.jar langUnfinalized.lang langFinalized.lang")
-		return
 	}
 
 	val firstFile = File(args[0])
@@ -32,7 +31,7 @@ fun main(args: Array<String>) {
 fun extractKeyValue(line: String): Pair<String, String> {
 	val firstEqualsIndex = line.indexOf('=')
 	return if (firstEqualsIndex >= 0) {
-		line.substring(0, firstEqualsIndex) to line.substring(firstEqualsIndex + 1)
+		line.take(firstEqualsIndex) to line.substring(firstEqualsIndex + 1)
 	} else {
 		val splitLine = line.split("≠")
 		splitLine[0] to splitLine.getOrNull(1).orEmpty()
