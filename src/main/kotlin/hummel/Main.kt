@@ -4,7 +4,7 @@ import java.io.File
 
 fun main(args: Array<String>) {
 	require(args.size >= 2) {
-		println("Usage: java -jar ThisApp.jar langUnfinalized.lang langFinalized.lang")
+		"Usage: java -jar ThisApp.jar langUnfinalized.lang langFinalized.lang"
 	}
 
 	val firstFile = File(args[0])
