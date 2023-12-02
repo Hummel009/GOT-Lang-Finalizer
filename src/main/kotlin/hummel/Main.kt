@@ -3,7 +3,7 @@ package hummel
 import java.io.File
 
 fun main(args: Array<String>) {
-	require(args.size >= 2) {
+	require(args.size == 3) {
 		"Usage: java -jar ThisApp.jar langUnfinalized.lang langFinalized.lang"
 	}
 
